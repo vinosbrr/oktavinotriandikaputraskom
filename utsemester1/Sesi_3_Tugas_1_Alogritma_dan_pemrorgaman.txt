@@ -1,0 +1,54 @@
+# Sesi_3_Tugas_1_Alogritma_dan_pemrorgaman
+# Nama      : OKTAVINO TRIANDIKA PUTRA
+# NIM       : 059991713
+# PRODI     : SISTEM INFORMASI
+# FAKULTAS  : SAINS DAN TEKNOLOGI
+# UPBJJ-UT  : SEMARANG
+
+ALGORITMA_Hitung_gaji_karyawan
+
+DEKLARASI :
+    Golongan            : karakter
+    Jamlembur           : integer
+    Gajipokok           : real
+    Persentase          : real
+    Gajilembur          : real
+    Totalpenghasilan    : real
+
+DESKRIPSI :
+    INPUT Golongan
+    INPUT Jamlembur
+
+    IF Golongan = "A" THEN
+        Gajipokok <- 5000000
+    ELSE IF Golongan = "B" THEN
+        Gajipokok <- 6500000
+    ELSE IF Golongan = "C" THEN
+        Gajipokok <- 9500000
+    ELSE
+        OUTPUT "Golongan yang anda masukkan tidak valid!."
+        STOP
+    END IF
+
+    IF Jamlembur = 1 THEN
+        Persentase <- 0.30
+    ELSE IF Jamlembur = 2 THEN
+        Persentase <- 0.32
+    ELSE IF Jamlembur = 3 THEN
+        Persentase <- 0.34
+    ELSE IF Jamlembur = 4 THEN
+        Persentase <- 0.36
+    ELSE IF Jamlembur >= 5 THEN
+        Persentase <- 0.38
+    ELSE
+        Persentase <- 0
+    END IF
+
+    Gajilembur <- Gajipokok * Persentase
+    Totalpenghasilan <- Gajipokok + Gajilembur
+
+    OUTPUT "Total penghasilan anda adalah Rp.", Totalpenghasilan
+
+SELESAI
+
+    
